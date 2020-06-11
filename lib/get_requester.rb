@@ -6,10 +6,8 @@ require 'pry'
 class GetRequester
     
     def initialize(uri)
-       uri = URI.parse(URL)
-       response = Net::HTTP.get_response(uri)
-       response.body
-       
+        @uri = URL
+         
     end
 
     def get_response_body
@@ -17,6 +15,9 @@ class GetRequester
         response = Net::HTTP.get_response(uri)
         response.body
         
+    end
+    def parse_json
+        JSON.parse(self.get_response_body)
     end
                 
 end
