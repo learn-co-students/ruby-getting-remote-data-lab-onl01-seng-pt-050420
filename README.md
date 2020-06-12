@@ -1,5 +1,5 @@
 # Getting Remote Data Lab
-
+ 
 ## Learning Goals
 
 - Practice sending GET requests using Ruby
